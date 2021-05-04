@@ -11,7 +11,7 @@
     </select>
 
     <select id="selectByName" resultType="User">
-        select * from user where name=#{username}
+        select * from user where username=#{username}
     </select>
 
     <select id="selectByEmail" resultType="User">
@@ -30,12 +30,12 @@
     </update>
 
     <update id="updateHeader">
-        update user set status = #{headerUrl} where id=#{id}
+        update user set header_url = #{headerUrl} where id=#{id}
 
     </update>
 
     <update id="updatePassWord">
-        update user set status = #{password} where id=#{id}
+        update user set password = #{password} where id=#{id}
 
     </update>
 

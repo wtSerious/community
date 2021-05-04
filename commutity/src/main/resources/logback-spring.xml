@@ -25,7 +25,6 @@
             <onMismatch>DENY</onMismatch>
         </filter>
     </appender>
-
     <!-- warn file -->
     <appender name="FILE_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APPDIR}/log_warn.log</file>

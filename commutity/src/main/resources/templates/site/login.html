@@ -67,7 +67,7 @@
 					<div class="form-group row">
 						<label for="username" class="col-sm-2 col-form-label text-right">账号:</label>
 						<div class="col-sm-10">
-							<input type="text" th:class="|form-control ${passwordMsg!=null?'is-invalid':''}|" id="username"
+							<input type="text" th:class="|form-control ${usernameMsg!=null?'is-invalid':''}|" id="username"
 								   name="username" th:value="${param.username}" placeholder="请输入您的账号!" required>
 							<div class="invalid-feedback" th:text="${usernameMsg}">
 								该账号不存在!

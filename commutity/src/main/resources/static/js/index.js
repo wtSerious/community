@@ -8,6 +8,7 @@ function publish() {
 	// 获取标题和内容
 	var title = $("#recipient-name").val();
 	var content = $("#message-text").val();
+	console.log(title)
 	// 发送异步请求
 	$.post(
 		CONTEXT_PATH + "/discuss/add",
